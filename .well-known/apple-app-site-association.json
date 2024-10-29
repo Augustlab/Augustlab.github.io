@@ -1,18 +1,11 @@
 {
-    "applinks": {
-        "details": [
-             {
-               "appIDs": [ "Q8YHLLDBWK.com.augustlab.theReDApp" ]
-               
-             }
-         ]
-     },
-     "webcredentials": {
-        "apps": [ "Q8YHLLDBWK.com.augustlab.theReDApp" ]
-     },
-  
-  
-      "appclips": {
-          "apps": ["Q8YHLLDBWK.com.example.MyApp.Clip"]
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "Q8YHLLDBWK.com.augustlab.theReDApp",
+        "paths": ["*"]
       }
+    ]
   }
+}
