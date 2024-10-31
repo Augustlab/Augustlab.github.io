@@ -51,12 +51,15 @@
             location.href = `intent://${
               currentUrl.split("?")[1] || ""
             }#Intent;scheme=${APP_SCHEME};package=${ANDROID_PACKAGE};S.browser_fallback_url=https://play.google.com/store/apps/details?id=${ANDROID_PACKAGE};end;`;
+            
+            'kakaoweb://closeBrowser';
           } else if (isIOS) {
             location.href = `${APP_SCHEME}${currentUrl.split("?")[1] || ""}`;
             setTimeout(function () {
               if (!document.hidden) {
                 location.href = `https://apps.apple.com/app/id${IOS_APP_ID}`;
               }
+              'kakaotalk://inappbrowser/close';
             }, TIMEOUT);
           }
         } else {
@@ -64,12 +67,14 @@
             location.href = `intent://${
               currentUrl.split("?")[1] || ""
             }#Intent;scheme=${APP_SCHEME};package=${ANDROID_PACKAGE};S.browser_fallback_url=https://play.google.com/store/apps/details?id=${ANDROID_PACKAGE};end;`;
+            'kakaoweb://closeBrowser';
           } else if (isIOS) {
             location.href = `${APP_SCHEME}${currentUrl.split("?")[1] || ""}`;
             setTimeout(function () {
               if (!document.hidden) {
                 location.href = `https://apps.apple.com/app/id${IOS_APP_ID}`;
               }
+              'kakaotalk://inappbrowser/close';
             }, TIMEOUT);
           }
         }
